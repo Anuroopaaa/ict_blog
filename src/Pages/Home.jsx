@@ -22,16 +22,26 @@ export default function Home() {
   return (
     <div>
       <Container className = 'text-center mt-5'>
-      <h1 className='d-flex justify-content-center mt-5'>BLOG</h1>
- 
+      <h1 className='d-flex justify-content-center mt-5'>BLOGS</h1>
+      <br /> <br />
+      <nav class="">
+  <div class="d-flex">
+    <a class="navbar-brand" href='none'>Search for a blog </a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button> 
+    </form>
+  </div>
+</nav>
 <Row>
   {blog.map((item, index) => (
     <Col sm = {4}  key={index} className="card-pad mt-4">
-      <Card className='card-pad'>
+      <Card className='card-pad' border='primary'>
         <Card.Body>
+        <Card.Img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Beach_sunset.jpg" style={{ height: '200px', objectFit: 'cover' }} />
           <Card.Title className='he1'>{item.title}</Card.Title>
           <Card.Text style={{height :'20 rem'}}>
-            {blog.completed?"completed":"pending"}
+            {item.completed?"completed":"pending"}
             </Card.Text>
           <Button variant="primary">Explore</Button>
         </Card.Body>

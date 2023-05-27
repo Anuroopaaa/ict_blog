@@ -2,21 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function Nav1() {
-  return (
-    <div>
-        
-        <nav>
-       <ul className='d-flex justify-content-around list-unstyled mt-5 text-decoration-none'>
+   return (
+      
+      <div style>
+
+         <nav>
+
+            <ul className='d-flex justify-content-around list-unstyled mt-5' >
           <li>
-             <Link to="/">Home</Link>
+             <Link to="/" style={{ textDecoration: 'none' }}>HOME</Link>
           </li>
           <li>
-             <Link to="/add">Add Blog</Link>
+             <Link to="/add" style={{ textDecoration: 'none' }}>ADD BLOG</Link>
           </li>
          
-       </ul>
- </nav>
-
-    </div>
-  )
+       </ul> 
+         </nav>
+<hr />
+      </div>
+   )
 }

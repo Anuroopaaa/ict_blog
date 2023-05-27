@@ -8,14 +8,16 @@ import AddBlog from './Pages/AddBlog';
 export default function App() {
   return (
     <div>
+      <div>
+      <Nav1></Nav1>
+
+      </div>
+
       <Container>
-        <Nav1></Nav1>
-        <h1 className='d-flex justify-content-center mt-5'>BLOG</h1>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<AddBlog/>} />
        </Routes>
-
 
       </Container>
       

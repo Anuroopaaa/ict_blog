@@ -1,7 +1,15 @@
 import React from 'react'
+import Form from '../Form.jsx';
+import Container from 'react-bootstrap/Container';
 
 export default function AddBlog() {
   return (
-    <div>AddBlog</div>
+    <div>
+      <Container>
+
+        <Form></Form>
+
+      </Container>
+    </div>
   )
 }

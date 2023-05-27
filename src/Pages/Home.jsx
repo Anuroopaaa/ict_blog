@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container';
-//import { useForm } from "react-hook-form";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
@@ -9,7 +8,6 @@ import '../style.css';
 
 
 export default function Home() {
-  //const { register, handleSubmit } = useForm();
   const[blog,setBlog] = useState([]);
   const getData = async () =>{
   const data = await fetch('https://jsonplaceholder.typicode.com/todos');

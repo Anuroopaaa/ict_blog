@@ -1,16 +1,7 @@
 import Container from "react-bootstrap/Container";
-//import { useForm } from "react-hook-form";
 
 
 export default function App() {
-
-
-
-  //  const { register, handleSubmit } = useForm();
-  // const onFormSubmit  = data => console.log(data);
-  //const onErrors = errors => console.error(errors);
-
-
 
 
   return (
@@ -19,7 +10,7 @@ export default function App() {
         <h1 className="text-center mb-5">Add Blog</h1>
 
 
-        <form /*onSubmit={handleSubmit(onFormSubmit, onErrors)}*/>
+        <form>
           <div class="mb-3">
             <label for="blogTitle" class="form-label">Blog Title</label>
             <input type="text" class="form-control" aria-describedby="" />
